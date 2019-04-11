@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "RobotoSlab-Regular";
+    src: url(../fonts/RobotoSlab-Regular.ttf);
+}
+
+@font-face { 
+    font-family: "Kingthings";
+    src: url(../fonts/Kingthings_Italique-webfont.eot) format("eot"), /* IE8+, знак ? позволяет обойти баг в обработчике значения src */
+         url(../fonts/Kingthings_Italique-webfont.woff) format("woff"), /* все современные браузеры, IE9+ */
+         url(../fonts/Kingthings_Italique-webfont.ttf) format("truetype"); /* все современные браузеры */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "RobotoSlab-Regular";
+    font-size: 40px;
+    text-align: center;
+
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.text {
+    column-count: 2;
+    column-gap: 100px;
+    column-rule: 1px dotted black;
+}
+
+aside {
+    margin-top: 100px;
+}
+
+.wrap {
+   display: inline-block;
+
+}
+
+.wrap_wrapper {
+    width: 700px;
+    margin-left: 100px;
+}
+
+.close {
+    margin-left: 800px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+
+.comment_wrap {
+    display: flex;
+    margin-bottom: 40px;
+
+
+}
+
+.comment {
+    background: linear-gradient(45deg, rgba(240, 53, 109, 0.8), 
+                rgba(34, 101, 163, .5)),
+                   url(../images/PastelRainbowWallpaper.png);
+    background-size: cover;
+    /* background: rgba(125, 123, 255, 0.5);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    /*background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    /*background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); IE6-9 */
+
+    width: 600px;
+    margin-left: 20px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: bold;
+
+    -webkit-box-shadow: 8px 8px  10px rgb(156, 156, 156);
+    -moz-box-shadow: 8px 8px  10px rgb(156, 156, 156);
+    box-shadow: 8px 8px  10px rgb(156, 156, 156);
+}
+
+.comment:hover .com_text {
+    text-shadow: 0 0 5px white, 0 0 10px white, 
+                0 0 15px white, 0 0 20px crimson, 
+                0 0 35px crimson, 0 0 40px crimson,
+                0 0 50px crimson, 0 0 75px crimson;
+}
+
+
+.autor {
+    margin: 7px 0;
+
+}
+
+.com_text {
+    font-style: italic;
+}
+
+form {
+    margin: 50px 0;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    height: 30px;
+}
+
