@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+ 
+    background: rgb(149, 149, 224);
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.wrap {
+    position: relative;
+    width: 200px;
+    background: #ffffff;
+    display: inline-block;
+    margin: 30px 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    -webkit-box-shadow: 9px 9px  12px rgb(192, 189, 189);
+    -moz-box-shadow: 9px 9px  12px rgb(192, 189, 189);
+    box-shadow: 9px 9px  12px rgb(192, 189, 189);
+}  
+
+img {
+    width: 100%;
+}
+
+.wrap:nth-child(even) {
+    transform: translate(3px,2px) rotate(3deg);
+    -ms-transform: translate(3px,2px) rotate(3deg) ;
+    -webkit-transform: translate(3px,2px) rotate(3deg);
+    -o-transform: translate(3px,2px) rotate(3deg);
+    -moz-transform: translate(3px,2px) rotate(3deg);
+}
+
+.wrap:nth-child(odd) {
+    transform: translate(2px,3px) rotate(-3deg);
+    -ms-transform: translate(2px,3px) rotate(-3deg) ;
+    -webkit-transform: translate(2px,3px) rotate(-3deg);
+    -o-transform: translate(2px,3px) rotate(-3deg);
+    -moz-transform: translate(2px,3px) rotate(-3deg);
+} 
+
+.wrap:hover {
+    width:230px;
+    -moz-transition: width 1.5s,height 1.5s,-moz-transform 1.5s,font-size 1.5s,opacity 1.5s, color 1.5s; 
+    -webkit-transition: width 1.5s,height 1.5s,-webkit-transform 1.5s,font-size 1.5s,opacity 1.5s, color 1.5s;
+    -o-transition: width 1.5s,height 1.5s,-o-transform 1.5s,font-size 1.5s,opacity 1.5s, color 1.5s;
+    transition: width 1.5s,height 1.5s,transform 1.5s,font-size 1.5s,opacity 1.5s, color 1.5s;
+
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    /* -o-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5); */
+
+    -webkit-box-shadow: 9px 9px  12px rgb(148, 148, 148);
+    -moz-box-shadow: 9px 9px  12px rgb(148, 148, 148);
+    box-shadow: 9px 9px  12px rgb(148, 148, 148);
+}
+
+
+
+.saind {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.text_wrap {
+    display: none;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 48px;
+    color: #ffffff;
+}
+
+.wrap:hover .text_wrap {
+    display: block;
+    -moz-transition: width 1.5s,height 1.5s; 
+    -webkit-transition: width 1.5s,height 1.5s;
+    -o-transition: width 1.5s,height 1.5s;
+    transition: width 1.5s,height 1.5s;
+    width: 230px;
+}
