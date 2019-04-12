@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background: rgb(149, 149, 224);
+    
+}
+
+.container {
+    border: 1px solid red;
+    width: 1000px;
+    margin: 0 auto;
+}
+.wrap {
+    position: relative;
+    width: 200px;
+    background: #ffffff;
+    display: inline-block; 
+    margin: 30px 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    -webkit-box-shadow: 9px 9px  12px rgb(192, 189, 189);
+    -moz-box-shadow: 9px 9px  12px rgb(192, 189, 189);
+    box-shadow: 9px 9px  12px rgb(192, 189, 189);
+ 
+    -webkit-transform: scale(1,1);
+    -moz-transform: scale(1,1);
+    transform: scale(1,1);
+    transform: scale(1,1);
+}
+ 
+img {
+    width: 100%;
+}
+ 
+.wrap:nth-child(even) {
+    transform: translate(3px,2px) rotate(3deg);
+    -ms-transform: translate(3px,2px) rotate(3deg) ;
+    -webkit-transform: translate(3px,2px) rotate(3deg);
+    -o-transform: translate(3px,2px) rotate(3deg);
+    -moz-transform: translate(3px,2px) rotate(3deg);
+}
+ 
+.wrap:nth-child(odd) {
+    transform: translate(2px,3px) rotate(-3deg);
+    -ms-transform: translate(2px,3px) rotate(-3deg) ;
+    -webkit-transform: translate(2px,3px) rotate(-3deg);
+    -o-transform: translate(2px,3px) rotate(-3deg);
+    -moz-transform: translate(2px,3px) rotate(-3deg);
+} 
+ 
+.wrap:hover {
+    transform: scale(1.2,1.2);
+    transition-duration: 550ms;
+    transform: scale(1.2,1.2);
+    transition-duration: 550ms;
+    -webkit-transform: scale(1.2,1.2);
+    -webkit-transition-duration: 550ms;
+    -moz-transform: scale(1.2,1.2);
+    -moz-transition-duration: 550ms;
+    -webkit-box-shadow: 9px 9px  12px rgb(148, 148, 148);
+    -moz-box-shadow: 9px 9px  12px rgb(148, 148, 148);
+    box-shadow: 9px 9px  12px rgb(148, 148, 148);
+}
+ 
+.saind {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.text_wrap {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  transition-property: max-height;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  max-height: 0;
+  overflow-y: hidden;
+}
+
+.text {
+  margin:0;
+}
+ 
+.wrap:hover .text_wrap {
+    max-height: 100%;
+    /* -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s; */
+}
