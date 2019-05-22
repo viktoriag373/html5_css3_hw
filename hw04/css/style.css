@@ -10,6 +10,7 @@ body {
 }
 
 .container {
+    border: 1px solid red;
     width: 1000px;
     margin: 0 auto;
 }
@@ -54,14 +55,14 @@ img {
 } 
  
 .wrap:hover {
+    transform: scale(1.2,1.2);
+    transition-duration: 550ms;
+    transform: scale(1.2,1.2);
+    transition-duration: 550ms;
     -webkit-transform: scale(1.2,1.2);
     -webkit-transition-duration: 550ms;
     -moz-transform: scale(1.2,1.2);
     -moz-transition-duration: 550ms;
-    transform: scale(1.2,1.2);
-    transition-duration: 550ms;
-    transform: scale(1.2,1.2);
-    transition-duration: 550ms;
     -webkit-box-shadow: 9px 9px  12px rgb(148, 148, 148);
     -moz-box-shadow: 9px 9px  12px rgb(148, 148, 148);
     box-shadow: 9px 9px  12px rgb(148, 148, 148);
@@ -96,8 +97,8 @@ img {
  
 .wrap:hover .text_wrap {
     max-height: 100%;
-    -webkit-animation-delay: 2s;
+    /* -webkit-animation-delay: 2s;
     -moz-animation-delay: 2s;
     -o-animation-delay: 2s;
-    animation-delay: 2s; 
+    animation-delay: 2s; */
 }
