@@ -12,7 +12,7 @@
 </head>
 <body style="background: #90A4AE">
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark"">
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
             <a class="navbar-brand" href="#">Веб-студия</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,59 @@
                 </form>
             </div>
         </nav>
+        <div class="jumbotron" style="margin-top: 32px">
+            <form>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Имя</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="validationTooltip01" placeholder="Введите имя">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder=" Введите Email">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="inlineFormCustomSelectPref">Бюджет</label>
+                    <div class="col-sm-10">
+                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <option selected>не указано</option>
+                            <option value="1">100 000 р</option>
+                            <option value="2">200 000 р</option>
+                            <option value="3">300 000 р</option>
+                        </select>
+                    </div> 
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="inlineFormCustomSelectPref">Срок выполнения</label>
+                    <div class="col-sm-10">
+                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <option selected>не указано</option>
+                            <option value="1">7 дней</option>
+                            <option value="2">14 дней</option>
+                            <option value="3">1 месяц</option>
+                        </select>
+                    </div> 
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" for="exampleFormControlTextarea1">Сообщение</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder=" Введите дополнительную информацию"></textarea>
+                    </div>
+                </div>
+               
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
     </div>
+    
 
 
 
