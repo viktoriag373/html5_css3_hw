@@ -1,0 +1,52 @@
+.transition(...) { 
+    transition: @arguments; 
+    -moz-transition: @arguments; 
+    -webkit-transition: @arguments; 
+    -o-transition: @arguments; 
+} 
+ 
+.transform(@transforms: 0) when not (@transforms = 0) { 
+    -moz-transform+_: @transforms; 
+    -o-transform+_: @transforms; 
+    -webkit-transform+_: @transforms; 
+    transform+_: @transforms; 
+} 
+ 
+.shadow(@shadow) { 
+    -webkit-box-shadow: @shadow; 
+    -moz-box-shadow: @shadow; 
+    box-shadow: @shadow;  
+} 
+ 
+.rotate(@deg: 0) { 
+    .transform(rotate(@deg));  
+} 
+ 
+.scale(@x, @y) { 
+    .transform(scaleX(@x) scaleY(@y)); 
+} 
+ 
+.scale(@sc) { 
+    .transform(scale(@sc)); 
+} 
+ 
+.main(@side: 200px, @color: rgb(189, 234, 245), @scale: 1, @angle: -25deg) { 
+    width: @side; 
+    height: @side; 
+    .rotate(@angle); 
+    .scale(@scale); 
+    .shadow(5px 5px 5px rgba(95, 172, 161, 0.5)); 
+    background-color: @color; 
+    .transition(all 1s); 
+    
+    &:hover { 
+        .rotate(0deg); 
+        .scale(1.5); 
+        .shadow(5px 0px 5px rgba(118, 202, 191, 0.5)) 
+    } 
+} 
+ 
+.paper { 
+  .main;  
+  margin: 70px;
+} 
